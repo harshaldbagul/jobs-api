@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node src/app.js",
-    "start-local":"nodemon src/app.js"
+    "start-local": "nodemon src/app.js"
   },
   "author": "",
   "license": "ISC",
@@ -20,12 +20,14 @@
     "http-status-codes": "^2.1.4",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.1.4",
-    "xss-clean": "^0.1.1"
+    "xss-clean": "^0.1.1",
+    "swagger-ui-express": "^4.1.6",
+    "yamljs": "^0.3.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.9"
   },
-   "engines": {
+  "engines": {
     "node": "12.18.3"
   }
 }

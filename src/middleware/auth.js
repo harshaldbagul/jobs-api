@@ -13,7 +13,6 @@ const auth = async (req, res, next) => {
         const payload = jwt.verify(token, process.env.JWT_SECRET);
         const user = await User.findOne({ _id: payload.userId }).select('-password');
         req.user = user;
-        console.log(user);
         next();
     } catch (er) {
         throw new UnauthenticatedError('Invalid token');
